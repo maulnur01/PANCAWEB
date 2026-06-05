@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PANCAWEB – PPKn Fase C</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Josefin+Sans:wght@300;400;600;700&family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header id="header">
+    <div class="header-logo" id="logo-home">
+      <img src="https://png.pngtree.com/png-vector/20250611/ourmid/pngtree-garuda-pancasila-indonesia-national-emblem-vector-png-image_16505327.png"
+           onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Coat_of_arms_of_Indonesia.svg/180px-Coat_of_arms_of_Indonesia.svg.png'"
+           alt="Pancasila" class="header-pancasila-logo">
+      <span class="logo-text">PANCA<span class="logo-accent">WEB</span></span>
+    </div>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+    <nav class="main-nav" id="main-nav">
+      <a href="#" class="nav-link active" data-target="beranda" title="Beranda">Beranda</a>
+      <a href="#" class="nav-link" data-target="cptp" title="CP &amp; TP">CP &amp; TP</a>
+      <a href="#" class="nav-link" data-target="materi" title="Materi">Materi</a>
+      <a href="#" class="nav-link" data-target="puzzle" title="Puzzle">Puzzle</a>
+      <a href="#" class="nav-link" data-target="game" title="Mini Game">Mini Game</a>
+      <a href="#" class="nav-link" data-target="evaluasi" title="Evaluasi">Evaluasi</a>
+    </nav>
+  </header>
+
+  <main class="container">
+
+    <!-- ===================== BERANDA ===================== -->
+    <section id="beranda" class="content-section active">
+      <div class="hero-bg">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <div class="hero-logo-wrap">
+            <img src="https://png.pngtree.com/png-vector/20250611/ourmid/pngtree-garuda-pancasila-indonesia-national-emblem-vector-png-image_16505327.png"
+                 onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Coat_of_arms_of_Indonesia.svg/220px-Coat_of_arms_of_Indonesia.svg.png'"
+                 alt="Garuda Pancasila" class="hero-garuda">
+          </div>
+          <h1 class="hero-title">PANCA<span class="hero-accent">WEB</span></h1>
+          <p class="hero-sub">Jelajahi Nilai-Nilai Luhur Pancasila<br>melalui Pembelajaran Interaktif</p>
+
+          <div class="hero-buttons">
+            <div class="hero-btn-row">
+              <button class="btn-hero" data-goto="cptp">
+                <span>CP &amp; TP</span>
+              </button>
+              <button class="btn-hero" data-goto="materi">
+                <span>Materi</span>
+              </button>
+            </div>
+            <div class="hero-btn-row">
+              <button class="btn-hero" data-goto="puzzle">
+                <span>Puzzle</span>
+              </button>
+              <button class="btn-hero" data-goto="game">
+                <span>Mini Game</span>
+              </button>
+              <button class="btn-hero" data-goto="evaluasi">
+                <span>Evaluasi</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CP & TP ===================== -->
+    <section id="cptp" class="content-section">
+      <div class="section-bg-wrap">
+        <div class="page-header">
+          <button class="btn-back" data-goto="beranda">← Beranda</button>
+          <h2 class="page-title">Capaian &amp; Tujuan Pembelajaran</h2>
+          <div class="title-bar"></div>
+        </div>
+        <div class="cptp-grid">
+          <div class="cptp-card cp-card">
+            <div class="cptp-badge">CP</div>
+            <h3>Capaian Pembelajaran</h3>
+            <p>Peserta didik mampu memahami <strong>kronologi sejarah kelahiran Pancasila</strong>; meneladani sikap para perumus Pancasila dan menerapkannya di lingkungan masyarakat; menghubungkan sila-sila dalam Pancasila sebagai suatu kesatuan yang utuh; menguraikan makna nilai-nilai Pancasila sebagai <strong>dasar negara, pandangan hidup, dan ideologi bangsa</strong>.</p>
+          </div>
+          <div class="cptp-card tp-card">
+            <div class="cptp-badge tp-badge">TP</div>
+            <h3>Tujuan Pembelajaran</h3>
+            <p>Melalui implementasi website murid mampu:</p>
+            <ul>
+              <li>Menceritakan sejarah pancasila dengan benar.</li>
+              <li>Menjelaskan makna-makna simbol pancasila dengan benar.</li>
+              <li>Mengaitkan simbol-simbol Pancasila dengan bunyi silanya secara tepat.</li>
+              <li>Menguraikan nilai-nilai yang terkandung dalam setiap sila dengan benar.</li>
+              <li>Menerapkan nilai-nilai pancasila dalam kehidupan sehari-hari dengan tepat.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== MATERI ===================== -->
+    <section id="materi" class="content-section">
+      <div class="section-bg-wrap">
+        <div class="page-header">
+          <button class="btn-back" data-goto="beranda">← Beranda</button>
+          <h2 class="page-title">Materi Pembelajaran</h2>
+          <div class="title-bar"></div>
+        </div>
+        <div class="materi-tabs">
+          <button class="mtab active" data-mtab="sejarah">Sejarah</button>
+          <button class="mtab" data-mtab="simbol">Makna Simbol</button>
+          <button class="mtab" data-mtab="nilai">Nilai-Nilai</button>
+          <button class="mtab" data-mtab="implementasi">Implementasi</button>
+        </div>
+
+        <!-- TAB: SEJARAH (dengan foto) -->
+        <div class="materi-content active" id="m-sejarah">
+          <div class="materi-card">
+            <h3>Sejarah Kelahiran Pancasila</h3>
+            <div class="timeline">
+              <div class="tl-item">
+                <div class="tl-dot tl-red"></div>
+                <div class="tl-body">
+                  <strong>29 April 1945</strong>
+                  <div class="tl-img-wrap">
+                    <img src="https://edumasterprivat.com/wp-content/uploads/2023/03/alasan-jepang-membentuk-bpupki.jpg"
+                         alt="Pembentukan BPUPKI"
+                         class="tl-photo"
+                         onerror="this.style.display='none'">
+                  </div>
+                  <p>Jepang membentuk <em>Badan Penyelidik Usaha-Usaha Persiapan Kemerdekaan Indonesia (BPUPKI)</em> yang bertugas menyiapkan dasar negara.</p>
+                </div>
+              </div>
+              <div class="tl-item">
+                <div class="tl-dot tl-gold"></div>
+                <div class="tl-body">
+                  <strong>29 Mei – 1 Juni 1945</strong>
+                  <div class="tl-img-wrap">
+                    <img src="https://awsimages.detik.net.id/community/media/visual/2023/06/01/sidang-pertama-badan-penyelidik-usaha-usaha-persiapan-kemerdekaan-indonesia-bpupki-pada-29-mei-1-juni-1945-di-gedung-chou-shan.jpeg?w=700&q=90"
+                         alt="Sidang Pertama BPUPKI"
+                         class="tl-photo"
+                         onerror="this.style.display='none'">
+                  </div>
+                  <p>Sidang pertama BPUPKI. Tokoh-tokoh seperti Moh. Yamin, Soepomo, dan Ir. Soekarno mengusulkan dasar negara. Pada 1 Juni 1945, Soekarno menyampaikan konsep <strong>"Pancasila"</strong> — diperingati sebagai Hari Lahir Pancasila.</p>
+                </div>
+              </div>
+              <div class="tl-item">
+                <div class="tl-dot tl-green"></div>
+                <div class="tl-body">
+                  <strong>22 Juni 1945</strong>
+                  <div class="tl-img-wrap">
+                    <img src="https://wawasansejarah.com/wp-content/uploads/2018/02/naskah-piagam-jakarta-302x500.jpg"
+                         alt="Piagam Jakarta"
+                         class="tl-photo tl-photo-portrait"
+                         onerror="this.style.display='none'">
+                  </div>
+                  <p>Panitia Sembilan merumuskan <em>Piagam Jakarta</em> yang memuat rumusan dasar negara.</p>
+                </div>
+              </div>
+              <div class="tl-item">
+                <div class="tl-dot tl-red"></div>
+                <div class="tl-body">
+                  <strong>18 Agustus 1945</strong>
+                  <div class="tl-img-wrap">
+                    <img src="https://cdn.timesmedia.co.id/images/2021/08/18/sejarah-presiden-soekarno-2.jpg"
+                         alt="Soekarno - Pengesahan Pancasila"
+                         class="tl-photo"
+                         onerror="this.style.display='none'">
+                  </div>
+                  <p>PPKI mengesahkan UUD 1945 dan secara resmi menetapkan <strong>Pancasila sebagai Dasar Negara Republik Indonesia</strong>.</p>
+                </div>
+              </div>
+            </div>
+            <div class="info-box"><strong>Tahukah Kamu?</strong> Kata "Pancasila" berasal dari bahasa Sanskerta: <em>pañca</em> (lima) dan <em>śīla</em> (prinsip/asas).</div>
+          </div>
+        </div>
+
+        <!-- TAB: SIMBOL (dengan gambar simbol dari URL baru) -->
+        <div class="materi-content" id="m-simbol">
+          <div class="materi-card">
+            <h3>Makna Simbol &amp; Implementasi Pancasila</h3>
+            <div class="simbol-grid">
+              <div class="simbol-item si1">
+                <img src="https://asset-a.grid.id/crop/0x0:0x0/700x0/photo/2020/11/23/1210936319.png"
+                     alt="Bintang Emas – Sila 1"
+                     onerror="this.style.display='none'">
+                <div class="simbol-info">
+                  <h4>Sila 1 – Bintang Emas</h4>
+                  <p>Bintang melambangkan cahaya kerohanian dari Tuhan kepada manusia. Warna emas melambangkan keagungan Tuhan Yang Maha Esa.</p>
+                  <div class="simbol-impl">
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="simbol-item si2">
+                <img src="https://3.bp.blogspot.com/-PrLOmFWdfnQ/VlFpsY2InLI/AAAAAAAABNQ/sBhbEYE26zA/s1600/Rantai%2BEmas.png"
+                     alt="Rantai Emas – Sila 2"
+                     onerror="this.style.display='none'">
+                <div class="simbol-info">
+                  <h4>Sila 2 – Rantai Emas</h4>
+                  <p>Rantai melambangkan hubungan manusia yang saling berkaitan. Gelang persegi (laki-laki) dan bulat (perempuan).</p>
+                  <div class="simbol-impl">
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="simbol-item si3">
+                <img src="https://3.bp.blogspot.com/-zOsWCYZbIew/WjQiOGrh1cI/AAAAAAAAAKw/QBVH4QJZM_YJDhGNy9JAkZsYVM9fOZYqwCEwYBhgL/s1600/Pancasila_Sila_3_pohon_beringin.png"
+                     alt="Pohon Beringin – Sila 3"
+                     onerror="this.style.display='none'">
+                <div class="simbol-info">
+                  <h4>Sila 3 – Pohon Beringin</h4>
+                  <p>Pohon Beringin melambangkan persatuan Indonesia. Akarnya yang kuat mencerminkan kesatuan bangsa yang kokoh.</p>
+                  <div class="simbol-impl">
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="simbol-item si4">
+                <img src="https://rumahjuara.id/assets/images/sila%204.png"
+                     alt="Kepala Banteng – Sila 4"
+                     onerror="this.style.display='none'">
+                <div class="simbol-info">
+                  <h4>Sila 4 – Kepala Banteng</h4>
+                  <p>Kepala Banteng melambangkan kerakyatan. Banteng adalah hewan sosial yang suka berkelompok, mencerminkan musyawarah.</p>
+                  <div class="simbol-impl">
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="simbol-item si5">
+                <img src="https://imgx.sonora.id/crop/0x0:0x0/700x465/photo/2023/08/31/lambang-sila-ke-5-foto-article-2-20230831011021.jpg"
+                     alt="Padi & Kapas – Sila 5"
+                     onerror="this.style.display='none'">
+                <div class="simbol-info">
+                  <h4>Sila 5 – Padi &amp; Kapas</h4>
+                  <p>Padi dan kapas melambangkan kemakmuran. Padi melambangkan pangan, kapas melambangkan sandang bagi seluruh rakyat.</p>
+                  <div class="simbol-impl">
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB: NILAI-NILAI (bisa diklik, tampilkan detail modal) -->
+        <div class="materi-content" id="m-nilai">
+          <div class="materi-card">
+            <h3>Nilai-Nilai Pancasila</h3>
+            <div class="nilai-grid">
+              <div class="nilai-card nk1 nilai-clickable" data-sila="1">
+                <div class="nilai-num">1</div>
+                <h4>Ketuhanan Yang Maha Esa</h4>
+                <p>Mengakui dan percaya pada Tuhan; menghormati agama orang lain; tidak memaksakan agama kepada orang lain.</p>
+                <div class="nilai-click-hint">Klik untuk detail ▼</div>
+              </div>
+              <div class="nilai-card nk2 nilai-clickable" data-sila="2">
+                <div class="nilai-num">2</div>
+                <h4>Kemanusiaan yang Adil dan Beradab</h4>
+                <p>Mengakui persamaan derajat manusia; saling mencintai sesama; menjunjung tinggi nilai-nilai kemanusiaan.</p>
+                <div class="nilai-click-hint">Klik untuk detail ▼</div>
+              </div>
+              <div class="nilai-card nk3 nilai-clickable" data-sila="3">
+                <div class="nilai-num">3</div>
+                <h4>Persatuan Indonesia</h4>
+                <p>Menempatkan kepentingan bangsa di atas pribadi; rela berkorban untuk bangsa; bangga sebagai bangsa Indonesia.</p>
+                <div class="nilai-click-hint">Klik untuk detail ▼</div>
+              </div>
+              <div class="nilai-card nk4 nilai-clickable" data-sila="4">
+                <div class="nilai-num">4</div>
+                <h4>Kerakyatan yang Dipimpin oleh Hikmat</h4>
+                <p>Mengutamakan musyawarah untuk mufakat; menghormati hasil keputusan bersama; bertanggung jawab atas keputusan.</p>
+                <div class="nilai-click-hint">Klik untuk detail ▼</div>
+              </div>
+              <div class="nilai-card nk5 nilai-clickable" data-sila="5">
+                <div class="nilai-num">5</div>
+                <h4>Keadilan Sosial bagi Seluruh Rakyat</h4>
+                <p>Bersikap adil terhadap sesama; tidak boros; suka bekerja keras; menghargai karya orang lain.</p>
+                <div class="nilai-click-hint">Klik untuk detail ▼</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB: IMPLEMENTASI (tetap ada sebagai tab terpisah) -->
+        <div class="materi-content" id="m-implementasi">
+          <div class="materi-card">
+            <h3>Implementasi dalam Kehidupan Sehari-hari</h3>
+            <div class="impl-grid">
+              <div class="impl-card">
+                <img src="https://asset-a.grid.id/crop/0x0:0x0/700x0/photo/2020/11/23/1210936319.png" alt="Sila 1" class="impl-sila-img" onerror="this.style.display='none'">
+                <h4>Sila 1</h4>
+                <ul>
+                  <li>Berdoa sebelum dan sesudah belajar</li>
+                  <li>Menghormati teman berbeda agama</li>
+                  <li>Tidak mengganggu yang sedang beribadah</li>
+                </ul>
+              </div>
+              <div class="impl-card">
+                <img src="https://3.bp.blogspot.com/-PrLOmFWdfnQ/VlFpsY2InLI/AAAAAAAABNQ/sBhbEYE26zA/s1600/Rantai%2BEmas.png" alt="Sila 2" class="impl-sila-img" onerror="this.style.display='none'">
+                <h4>Sila 2</h4>
+                <ul>
+                  <li>Menolong teman yang kesulitan</li>
+                  <li>Tidak membeda-bedakan teman</li>
+                  <li>Sopan santun kepada guru</li>
+                </ul>
+              </div>
+              <div class="impl-card">
+                <img src="https://3.bp.blogspot.com/-zOsWCYZbIew/WjQiOGrh1cI/AAAAAAAAAKw/QBVH4QJZM_YJDhGNy9JAkZsYVM9fOZYqwCEwYBhgL/s1600/Pancasila_Sila_3_pohon_beringin.png" alt="Sila 3" class="impl-sila-img" onerror="this.style.display='none'">
+                <h4>Sila 3</h4>
+                <ul>
+                  <li>Bermain tanpa membeda-bedakan suku</li>
+                  <li>Menjaga kebersihan bersama</li>
+                  <li>Mengikuti upacara bendera</li>
+                </ul>
+              </div>
+              <div class="impl-card">
+                <img src="https://rumahjuara.id/assets/images/sila%204.png" alt="Sila 4" class="impl-sila-img" onerror="this.style.display='none'">
+                <h4>Sila 4</h4>
+                <ul>
+                  <li>Bermusyawarah memilih ketua kelas</li>
+                  <li>Menghormati keputusan musyawarah</li>
+                  <li>Aktif dalam diskusi kelas</li>
+                </ul>
+              </div>
+              <div class="impl-card">
+                <img src="https://imgx.sonora.id/crop/0x0:0x0/700x465/photo/2023/08/31/lambang-sila-ke-5-foto-article-2-20230831011021.jpg" alt="Sila 5" class="impl-sila-img" onerror="this.style.display='none'">
+                <h4>Sila 5</h4>
+                <ul>
+                  <li>Berbagi dengan yang membutuhkan</li>
+                  <li>Tidak pilih kasih saat bermain</li>
+                  <li>Rajin belajar dan bekerja keras</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PUZZLE (DRAG & DROP MATCH) ===================== -->
+    <section id="puzzle" class="content-section">
+      <div class="section-bg-wrap">
+        <div class="page-header">
+          <button class="btn-back" data-goto="beranda">← Beranda</button>
+          <h2 class="page-title">Puzzle Mencocokkan Lambang</h2>
+          <div class="title-bar"></div>
+        </div>
+        <div class="puzzle-intro card-dark" id="puzzle-intro">
+          <p>Cocokkan <strong>nama sila</strong> di sebelah kiri dengan <strong>lambangnya</strong> di sebelah kanan.<br>Seret atau klik lambang yang tepat untuk memasangkannya!</p>
+          <button class="btn-action" id="btn-start-puzzle">Mulai Puzzle</button>
+        </div>
+
+        <div id="puzzle-game" style="display:none;">
+          <div class="puzzle-score-bar">
+            <span>Skor: <strong id="puzzle-score">0</strong> / 5</span>
+            <span id="puzzle-progress-text">0/5 terjawab</span>
+          </div>
+          <div class="puzzle-match-wrapper">
+            <div class="puzzle-left-col" id="puzzle-left-col"></div>
+            <div class="puzzle-right-col" id="puzzle-right-col"></div>
+          </div>
+          <p id="puzzle-message" class="puzzle-msg"></p>
+          <div style="text-align:center;margin-top:16px;">
+            <button class="btn-action" id="btn-reset-puzzle" style="display:none;">Main Lagi</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== MINI GAME ===================== -->
+    <section id="game" class="content-section">
+      <div class="section-bg-wrap">
+        <div class="page-header">
+          <button class="btn-back" data-goto="beranda">← Beranda</button>
+          <h2 class="page-title">Mini Game Pancasila</h2>
+          <div class="title-bar"></div>
+        </div>
+
+        <div id="game-intro" class="eval-intro-card">
+          <h3>Aturan Mini Game</h3>
+          <p>Katak akan melompat ke <strong>daun teratai</strong> sesuai pilihanmu.<br>Jawaban <strong>benar</strong> &rarr; katak loncat selamat!<br>Jawaban <strong>salah</strong> &rarr; katak tenggelam!<br>Kamu punya <strong>3 nyawa</strong>. Selamatkan katak!</p>
+          <button class="btn-action" id="btn-start-game">Mulai Game</button>
+        </div>
+
+        <div id="game-play" style="display:none;">
+          <div class="game-hud">
+            <div class="hud-lives" id="hud-lives">&#10084;&#65039;&#10084;&#65039;&#10084;&#65039;</div>
+            <div class="hud-title">Game Pendidikan Pancasila</div>
+            <div class="hud-score">Skor: <strong id="game-score">0</strong></div>
+          </div>
+          <div class="game-question-bar">
+            <span id="game-q-counter">Pertanyaan: 1 / 10</span>
+          </div>
+          <div class="game-question-text" id="game-question-text">Pertanyaan muncul di sini...</div>
+          <div class="pond-scene" id="pond-scene">
+            <div class="pond-water"></div>
+            <div class="lily-pads" id="lily-pads"></div>
+            <div class="frog-wrap" id="frog-wrap">
+              <div class="frog" id="frog">&#128056;</div>
+            </div>
+          </div>
+        </div>
+
+        <div id="game-over" style="display:none;">
+          <div class="result-card">
+            <div class="result-icon" id="game-over-icon">&#128166;</div>
+            <h3 id="game-over-title">Game Over!</h3>
+            <div class="result-score" id="game-final-score">0</div>
+            <p id="game-over-msg"></p>
+            <button class="btn-action" id="btn-retry-game">Main Lagi</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EVALUASI ===================== -->
+    <section id="evaluasi" class="content-section">
+      <div class="section-bg-wrap">
+        <div class="page-header">
+          <button class="btn-back" data-goto="beranda">← Beranda</button>
+          <h2 class="page-title">Evaluasi Pemahaman</h2>
+          <div class="title-bar"></div>
+        </div>
+
+        <div id="eval-intro" class="eval-intro-card">
+          <div class="eval-intro-icon">&#128203;</div>
+          <h3>Uji Pemahamanmu!</h3>
+          <p>20 soal pilihan ganda tentang Pancasila.<br>Waktu pengerjaan: <strong>30 menit</strong>.<br>Soal acak. Pembahasan ditampilkan setelah selesai.</p>
+          <button class="btn-action" id="btn-start-eval">Mulai Evaluasi</button>
+        </div>
+
+        <div id="eval-game" style="display:none;">
+          <div class="eval-header-bar">
+            <span>Soal <strong id="q-current">1</strong> / <strong>20</strong></span>
+            <span class="timer-box">&#9201; <strong id="timer-display">30:00</strong></span>
+          </div>
+          <div class="eval-progress-bar">
+            <div class="eval-progress-fill" id="eval-progress-fill"></div>
+          </div>
+          <div class="quiz-card" id="quiz-card">
+            <p class="quiz-question" id="quiz-question"></p>
+            <div class="quiz-options" id="quiz-options"></div>
+            <button class="btn-action" id="btn-next-q" style="display:none;">Selanjutnya &rarr;</button>
+          </div>
+        </div>
+
+        <div id="eval-result" style="display:none;">
+          <div class="result-card">
+            <div class="result-icon" id="result-icon">&#127942;</div>
+            <h3 id="result-title">Hasil Evaluasi</h3>
+            <div class="result-score" id="result-score">0/20</div>
+            <p id="result-msg"></p>
+            <div class="result-detail" id="result-detail"></div>
+            <button class="btn-action" id="btn-show-review">Lihat Pembahasan</button>
+            <button class="btn-action btn-outline-action" id="btn-retry" style="margin-top:10px;">Ulangi Evaluasi</button>
+          </div>
+          <div id="eval-review" style="display:none;max-width:700px;margin:0 auto 60px;">
+            <h3 style="text-align:center;font-family:'Cormorant Garamond',serif;color:var(--red);margin-bottom:20px;font-size:1.5rem;">Pembahasan Jawaban</h3>
+            <div id="review-list"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- MODAL NILAI-NILAI PANCASILA -->
+  <div id="nilai-modal" class="nilai-modal-overlay" style="display:none;">
+    <div class="nilai-modal-box">
+      <button class="nilai-modal-close" id="nilai-modal-close">&times;</button>
+      <div class="nilai-modal-header">
+        <img id="modal-sila-img" src="" alt="" class="modal-sila-img">
+        <div>
+          <div class="modal-sila-num" id="modal-sila-num"></div>
+          <h3 id="modal-sila-title"></h3>
+        </div>
+      </div>
+      <div class="nilai-modal-body" id="modal-nilai-body"></div>
+    </div>
+  </div>
+
+  <audio id="snd-correct" src="https://www.soundjay.com/buttons/sounds/button-09.mp3" preload="auto"></audio>
+  <audio id="snd-wrong" src="https://www.soundjay.com/buttons/sounds/button-10.mp3" preload="auto"></audio>
+  <audio id="snd-complete" src="https://www.soundjay.com/misc/sounds/bell-ringing-05.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
